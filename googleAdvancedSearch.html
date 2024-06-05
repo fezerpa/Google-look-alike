@@ -15,17 +15,41 @@
             </nav>
         </header>
         <div class="container">
-            <form action="https://www.google.com/search" id="searchContainer">
-                <input type="text" name="q" class="searchBar">
-                <br>
-                <input type="submit" value="Google Search" class="searchButton">
-                <input type="submit" value="I'm feeling lucky" class="searchButton">
+            <form action="https://www.google.com/search" id="searchContainer" method="get">
+                <label>Find pages with...</label>
+                <label>To do this in the search box.</label>
+                <div>
+                    <label>All these words:</label>
+                    <input type="text" name="as_q">
+                    <div class="clarification">
+                        Type the important words: <span class="monospace">tri-colour rat terrier</span>
+                    </div>
+                </div>
+                <div>
+                    <label>This exact word or phrase:</label>
+                    <input type="text" name="as_epq">
+                    <div class="clarification">
+                        Put exact words in quotes: <span class="monospace">"rat terrier"</span>
+                    </div>
+                </div>
+                <div>
+                    <label>Any of these words:</label>
+                    <input type="text" name="as_oq">
+                    <div class="clarification">
+                        Type OR between all the words you want: <span class="monospace">miniature OR standard</span>
+                    </div>
+                </div>
+                <div>
+                    <label>None of these words:</label>
+                    <input type="text" name="as_eq">
+                    <div class="clarification">
+                        Put a minus sign just before words that you don't want: <span class="monospace">-rodent, -"Jack Russell"</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Image Search" class="searchButton">
+                </div>
             </form>
         </div>
     </body>
 </html>
-
-Find pages with… “all these words:”
-Find pages with… “this exact word or phrase:”
-Find pages with… “any of these words:”
-Find pages with… “none of these words:”
