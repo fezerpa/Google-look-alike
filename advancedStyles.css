@@ -3,7 +3,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     font-family: Arial, sans-serif;
 }
 
@@ -101,8 +101,8 @@ nav {
   }
   .advanced-search-container label {
     display: inline-block;
-    width: 16%;
-    font-size: 20px;
+    width: auto;
+    font-size: 18px;
     text-align: left;
   }
   .advanced-search-container .whitespace {
@@ -136,6 +136,16 @@ nav {
     width: 50%;
   }
 
-  .boxHeader{
-    text-align: left;
+  .advanced-search-container .boxHeader{
+    margin-right: 47.2%;
+    margin-left: -3%;
+  }
+
+  #advancedButton{
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    cursor: pointer;
   }

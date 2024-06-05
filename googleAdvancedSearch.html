@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>Advanced search wtih Google</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="advancedStyles.css">
     </head>
     <body>
         <header>
@@ -20,32 +20,34 @@
                 </ul>
             </nav>
         </header>
-        <div class="container">
+        <div class="advanced-search-container" style="margin-left: 40px;">
+            <h3 style="color: #d93025;">Advanced search</h3>
             <form action="https://www.google.com/search" id="searchContainer" method="get">
-                <label>Find pages with...</label>
+                <label class="boxHeader">Find pages with...</label>
+                <!-- <div class="whitespace"></div> -->
                 <label>To do this in the search box.</label>
-                <div>
+                <div class="form-group">
                     <label>All these words:</label>
                     <input type="text" name="as_q">
                     <div class="clarification">
                         Type the important words: <span class="monospace">tri-colour rat terrier</span>
                     </div>
                 </div>
-                <div>
+                <div class="form-group">
                     <label>This exact word or phrase:</label>
                     <input type="text" name="as_epq">
                     <div class="clarification">
                         Put exact words in quotes: <span class="monospace">"rat terrier"</span>
                     </div>
                 </div>
-                <div>
+                <div class="form-group">
                     <label>Any of these words:</label>
                     <input type="text" name="as_oq">
                     <div class="clarification">
                         Type OR between all the words you want: <span class="monospace">miniature OR standard</span>
                     </div>
                 </div>
-                <div>
+                <div class="form-group">
                     <label>None of these words:</label>
                     <input type="text" name="as_eq">
                     <div class="clarification">
@@ -53,7 +55,7 @@
                     </div>
                 </div>
                 <div>
-                    <input type="submit" value="Image Search" class="searchButton">
+                    <input type="submit" value="Google Advanced Search" id="advancedButton">
                 </div>
             </form>
         </div>
